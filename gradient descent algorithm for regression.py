@@ -30,7 +30,7 @@ def gradientDescent(X, y, learning_rate=0.01):
         error_list.append(cost(X, y, theta))
     return theta, error_list
 
-data = np.loadtxt('GD_Example.txt')
+data = np.loadtxt('Example.txt')
 
 # visualising data
 plt.scatter(data[:, 0], data[:, 1], marker='.')
@@ -66,4 +66,5 @@ y_pred = hypothesis(X_test, theta)
 plt.scatter(X_test[:, 1], y_test[:, ], marker='.')
 plt.plot(X_test[:, 1], y_pred, color='orange')
 plt.show()
+
 
